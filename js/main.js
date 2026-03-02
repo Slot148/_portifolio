@@ -8,9 +8,10 @@ if (audio3) audio3.volume = 0.5;
 
 document.addEventListener('click', (e) => {
     const elementoClicado = e.target;
-    const isInterativo = elementoClicado.matches('a, .sidebar ul, .sidebar li');
-    
-    if (isInterativo && audio3) {
+    const isInterativo = elementoClicado.matches('a, .sidebar li, button');
+    const isActive = elementoClicado.matches('li.active');
+
+    if ((isInterativo && audio3) && !isActive) {
         audio3.currentTime = 0;
         audio3.play().catch(err => console.log('Erro ao tocar som:', err));
     }

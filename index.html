@@ -5,26 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>My Basement</title>
+    <audio autoplay="true" loop  id="my_audio">
+        <source src="assets/sounds/Local Forecast - Elevator.mp3" type="audio/mpeg">
+    </audio>
+    <audio autoplay="true" loop id="my_audio_2">
+        <source src="assets/sounds/freesound_community-old_computer-32052.mp3" type="audio/mpeg">
+    </audio>
 </head>
 <body>
     <div class="painel">
-        <img src="assets/cd-windows.gif" alt="" style="width: 250px; right: 85px; top: 50px">
+        <img src="assets/imgs/cd-windows.gif" alt="" style="width: 250px; right: 85px; top: 50px">
     </div>
     <div class="container">
         <header></header>
         <div class="main-container">
             <aside class="sidebar">
                 <div class="img-container">
-                    <img src="assets/me.jpeg">
+                    <img src="assets/imgs/me.jpeg">
                     <p>Hii!!<br> I'm Nicolas. I love cats, music and 2000's aesthetic</p>
                 </div>
                 <nav>
                     <hr class="divider">
                     <h4>Me</h4>
                     <ul>
-                        <li>Home</li>
+                        <li class="active">Home</li>
                         <li>About me</li>
+                        <li>Blog</li>
                         <li>Photos</li>
                     </ul>
                     <hr class="divider">
@@ -38,34 +45,79 @@
                     <h4>My Button</h4>
                     <div class="button-container">
                         <a href="">
-                            <img src="assets/my_button2.png" alt="my-button" href>
+                            <img src="assets/imgs/my_button2.png" alt="my-button" href>
                         </a>
-                        <textarea rows="3"><a href="" target="_blank"><img src="" alt=""></a></textarea>
+                        <textarea rows="3" style="outline: none;" readonly><a href="" target="_blank"><img src="" alt=""></a></textarea>
                     </div>
                     
                 </nav>
             </aside>
             <main>
-                <div class="welcome-box">
+                <div class="box">
                     <h3>Welcome</h3>
                     <p>Hellooo!!! <br>This is my website, and here I go publish some things about me :3</p>
                 </div>
-                <div class="welcome-box" style="padding: 3px 0 0 0;">
+                <div class="box">
+                    <h3>Buttons</h3>
                     <div class="marquee">
                         <div class="track">
-                            <img src="assets/my_button2.png" alt="">
+                            <img src="assets/imgs/my_button2.png" alt="">
+                            <a href='https://blinkies.cafe' target='_blank'><img src='https://blinkies.cafe/b/display/blinkiesCafe-badge.gif' alt='blinkies.cafe | make your own blinkies!'></a>
+                            <!-- <a href="https://atabook.org"><img src="assets/imgs/img.gif" alt=""></a> -->
                         </div>
                     </div>
                 </div>
+                
+                <div class="column-container">
+                    <div class="box">
+                        <h3>Updates</h3>
+                        <p class="paragraph-updates">
+                            <b>01/03/2026</b> - I added the Updates, Form and To-do sections, and also adjusted the marquee and buttons<br>
+                            <b>28/02/2026</b> - Published on GitHub Pages
+                        </p>
+                    </div>
+                    <div class="box">
+                        <h3>To-do</h3>
+                        <p class="paragraph-updates">
+                            
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <h3>Formulario</h3>
+                    <form action="https://formsubmit.co/90d17c05750c8ff97c90acd4b700910f" method="post">
+                        <label for="nome">Nome:</label><br>
+                        <input type="text" name="nome" placeholder="Seu nome aqui!" id="nome" required="">
+                        <br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" name="email" id="email" placeholder="Seu email aqui!" required="">
+                        <br>
+                        <label for="mensagem">Mensagem:</label><br>
+                        <textarea name="msg" id="mensagem" placeholder="Algo a me dizer?" required=""></textarea><br>
+                        <button type="submit">Enviar</button>
+                        <input type="hidden" name="_subject" value="Novo envio!">
+                        <input type="hidden" name="_template" value="basic">
+                        <input type="hidden" name="_autoresponse" value="Obrigado por entrar em contato! Retornarei assim que possivel">
+                        <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="_next" value="https://slot148.github.io/_portifolio/status_pages/thanks.html">
+                    </form>
+                </div>
+
+                <div class="box">
+                    <h3>Buttons</h3>
+                    <div class="marquee">
+                        <div class="track">
+                            <img src="assets/imgs/my_button2.png" alt="">
+                            <a href='https://blinkies.cafe' target='_blank'><img src='https://blinkies.cafe/b/display/blinkiesCafe-badge.gif' alt='blinkies.cafe | make your own blinkies!'></a>
+                            <!-- <a href="https://atabook.org"><img src="assets/imgs/img.gif" alt=""></a> -->
+                        </div>
+                    </div>
+                </div>
+                
             </main>
         </div>
         <footer>2026</footer>
-        <audio autoplay="true" loop  id="my_audio">
-            <source src="https://dn710804.ca.archive.org/0/items/KevinMacLeodLocalForecastElevator/Kevin%20MacLeod%20_%20Local%20Forecast%20-%20Elevator.ogg" type="audio/ogg">
-        </audio>
-        <audio autoplay="true" loop id="my_audio_2">
-            <source src="assets/sounds/freesound_community-old_computer-32052.mp3" type="audio/mpeg">
-        </audio>
         <audio preload="auto" id="my_audio_3">
             <source src="assets/sounds/soundreality-mouse-click-sfx-478755.mp3" type="audio/mpeg">
         </audio>
