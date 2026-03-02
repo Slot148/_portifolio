@@ -24,10 +24,6 @@
     font-display: swap; /* Melhora performance */
 }
 
-*{
-    /* outline: 1px solid red; */
-}
-
 body{
     font-size: var(--font-size);
     font-family: w95fa;
