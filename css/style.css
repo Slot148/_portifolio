@@ -21,7 +21,7 @@
     src: url("../assets/fonts/w95fa.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
-    font-display: swap; /* Melhora performance */
+    font-display: swap;
 }
 
 body{
@@ -156,7 +156,7 @@ main > .box:last-child{
 }
 
 form * {
-    box-sizing: border-box; /* Padrão para todos elementos */
+    box-sizing: border-box;
 }
 
 .box > form{

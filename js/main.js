@@ -6,6 +6,20 @@ if (audio) audio.volume = 0.2;
 if (audio2) audio2.volume = 0.5;
 if (audio3) audio3.volume = 0.5;
 
+let audioDesbloqueado = false;
+
+function desbloquearAudio() {
+    if (audioDesbloqueado) return;
+    audioDesbloqueado = true;
+
+    document.addEventListener('click', desbloquearAudio);
+
+    if (audio) audio.play().catch(() => {});
+    if (audio2) audio2.play().catch(() => {});
+
+    document.removeEventListener('click', desbloquearAudio);
+}
+
 document.addEventListener('click', (e) => {
     const elementoClicado = e.target;
     const isInterativo = elementoClicado.matches('a, .sidebar li, button');
