@@ -8,11 +8,16 @@ if (audio3) audio3.volume = 0.5;
 
 let audioDesbloqueado = false;
 
-document.addEventListener('click', (e) => {
+document.addEventListener('click', async (e) => {
     if (!audioDesbloqueado) {
         audioDesbloqueado = true;
-        if (audio) audio.play().catch(err => console.log(err));
-        if (audio2) audio2.play().catch(err => console.log(err));
+        try {
+            await audio.play();
+            await audio2.play();
+        } catch (err) {
+            console.log('Erro ao desbloqueiar audio:', err);
+            audioDesbloqueado = false; // reseta se falhar
+        }
     }
 
     const elementoClicado = e.target;
