@@ -247,14 +247,6 @@ footer{
     animation: 10s linear 0s infinite normal none running marquee;
 }
 
-.track-reverse {
-    width: 100%;
-    position: absolute;
-    will-change: transform;
-    white-space: nowrap;
-    animation: 10s linear 0s infinite normal none running marquee-reverse;
-}
-
 .track:hover{
     animation-play-state: paused;
 }
@@ -271,16 +263,6 @@ footer{
         transform: translateX(-100%);
     }
 }
-
-@keyframes marquee-reverse{
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(100%);
-    }
-}
-
 
 .column-container{
     display: flex;
