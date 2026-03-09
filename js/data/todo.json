@@ -1,0 +1,26 @@
+[
+    {
+        "checked": true,
+        "message": "add my projects"
+    },
+    {
+        "checked": false,
+        "message": "change my header image"
+    },
+    {
+        "checked": false,
+        "message": "add gifs and \"stickers\" on pages"
+    },
+    {
+        "checked": false,
+        "message": "adjust thank's page for form redirection"
+    },
+    {
+        "checked": false,
+        "message": "add custom 404 page"
+    },
+    {
+        "checked": false,
+        "message": "write about me"
+    }
+]

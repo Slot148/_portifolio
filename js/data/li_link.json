@@ -1,0 +1,34 @@
+[
+    [
+        {
+            "name": "Home",
+            "link": "../index.html"
+        },
+        {
+            "name": "About me",
+            "link": "./about-me.html"
+        },
+        {
+            "name": "Blog",
+            "link": "./blog.html"
+        },
+        {
+            "name": "Photos",
+            "link": "./photos.html"
+        }
+    ],
+    [
+        {
+            "name": "Projects",
+            "link": "./projects.html"
+        },
+        {
+            "name": "Links",
+            "link": "./links.html"
+        },
+        {
+            "name": "Contact",
+            "link": "./contact.html"
+        }
+    ]
+]

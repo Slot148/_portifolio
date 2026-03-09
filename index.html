@@ -11,6 +11,9 @@
     <audio preload="auto" id="my_audio_3">
         <source src="assets/sounds/soundreality-mouse-click-sfx-478755.mp3" type="audio/mpeg">
     </audio>
+    <audio preload="auto" id="my_audio_4">
+        <source src="assets/sounds/internet.mp3" type="audio/mpeg">
+    </audio>
     <audio autoplay="true" loop  id="my_audio">
         <source src="assets/sounds/Local Forecast - Elevator.mp3" type="audio/mpeg">
     </audio>
@@ -18,7 +21,7 @@
         <source src="assets/sounds/freesound_community-old_computer-32052.mp3" type="audio/mpeg">
     </audio>
     <div class="painel">
-        <img src="assets/imgs/cd-windows.gif" alt="" style="width: 250px; right: 85px; top: 50px">
+        <!-- <img src="assets/imgs/cd-windows.gif" alt="" style="width: 250px; right: 85px; top: 50px"> -->
     </div>
 
     <div class="container">
@@ -29,21 +32,21 @@
                     <img src="assets/imgs/me.jpeg">
                     <p>Hii!!<br> I'm Nicolas. I love cats, music and 2000's aesthetic</p>
                 </div>
-                <nav>
+                <nav id="sidefunction">
                     <hr class="divider">
                     <h4>Me</h4>
                     <ul>
                         <li class="active">Home</li>
-                        <li>About me</li>
-                        <li>Blog</li>
-                        <li>Photos</li>
+                        <li><a href="./pages/about-me.html">About me</a></li>
+                        <li><a href="./pages/blog.html">Blog</a></li>
+                        <li><a href="./pages/photos.html">Photos</a></li>
                     </ul>
                     <hr class="divider">
                     <h4>Develop</h4>
                     <ul>
-                        <li>Projects</li>
-                        <li>Links</li>
-                        <li>Contact</li>
+                        <li><a href="./pages/projects.html">Projects</a></li>
+                        <li><a href="./pages/links.html">Links</a></li>
+                        <li><a href="./pages/contact.html">Contact</a></li>
                     </ul>
                     <hr class="divider">
                     <h4>My Button</h4>
@@ -75,16 +78,16 @@
                 <div class="column-container">
                     <div class="box">
                         <h3>Updates</h3>
-                        <p class="paragraph-updates">
-                            <b>01/03/2026</b> - I added the Updates, Form and To-do sections, and also adjusted the marquee and buttons<br>
-                            <b>28/02/2026</b> - Published on GitHub Pages
+                        <p class="paragraph-updates" id="update-list">
+                            <!-- <b>01/03/2026</b> - I added the Updates, Form and To-do sections, and also adjusted the marquee and buttons<br>
+                            <b>28/02/2026</b> - Published on GitHub Pages -->
                         </p>
                     </div>
                     <div class="box">
                         <h3>To-do</h3>
-                        <p class="paragraph-updates">
+                        <div class="paragraph-updates" id="todo-list">
                             
-                        </p>
+                        </div>
                     </div>
                 </div>
                 
@@ -124,5 +127,5 @@
         <footer>2026</footer>
     </div>
 </body>
-<script src="js/main.js"></script>
+<script type="module" src="/js/index.js"></script>
 </html>
